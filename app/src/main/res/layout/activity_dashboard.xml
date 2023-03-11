@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg1"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/dashboard_tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:paddingStart="10dp"
+            android:text="admin@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/dashboard_iv_logout"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/dashboard_iv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/parentRelative"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="6dp"
+                        android:backgroundTint="@color/black"
+                        android:elevation="10dp"
+                        app:cardElevation="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/imageSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            app:sliderAnimationDuration="600"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="true"
+                            app:sliderIndicatorAnimationDuration="600"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="15dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#5A5A5A"
+                            app:sliderIndicatorUnselectedColor="#FFF"
+                            app:sliderScrollTimeInSec="1"
+                            app:sliderStartAutoCycle="true" >
+
+                        </com.smarteist.autoimageslider.SliderView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <!--Song All Data content-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="5"
+                    android:orientation="vertical"
+                    android:layout_height="875dp">
+                    <!--              1st  row of data Start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cartoon"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/rv_1"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <!--              2nd row of data start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hindi-Movie"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:paddingTop="10dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/rv_2"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                    <!--              3rd  row of data Start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hindi-Song"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/rv_3"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <!--              4th  row of data Start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hollywood-Movies"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/rv_4"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <!--              5th  row of data Start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Html-Videos"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/rv_5"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <!--              6th  row of data Start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CSS-Videos"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/rv_6"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

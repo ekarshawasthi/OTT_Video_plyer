@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@drawable/backimg1"
+        android:paddingHorizontal="20dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        tools:context=".SubscriptionActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/siscribiction_package"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rc_subscribe_package_list"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Proceed Now"
+        android:textAllCaps="false"
+        android:background="@drawable/mycircleborder"
+        android:textSize="23sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_package_proceed"/>
+
+    </LinearLayout>

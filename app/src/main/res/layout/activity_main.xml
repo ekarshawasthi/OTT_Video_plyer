@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backimg1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:background="@drawable/usercircle"
+        android:src="@drawable/userlogin"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginVertical="20dp"
+        android:textStyle="bold|italic"
+        android:text="Welcome to Go Cimema"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/login_with_email"
+        android:layout_gravity="center_horizontal"
+        android:text="Login With Email"
+        android:textAllCaps="false"
+        android:background="@drawable/mycircleborder"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="130dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_width="40dp"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="or"/>
+        <View
+            android:layout_width="130dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="12dp"
+            android:layout_height="2dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/login_with_otp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login With OTP"
+        android:textAllCaps="false"
+        android:background="@drawable/mycircleborder"
+        android:textSize="23sp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/signupForm"
+        android:layout_gravity="center_horizontal"
+        android:text="SignUp/Register"
+        android:textAllCaps="false"
+        android:background="@drawable/mycircleborder"
+        android:textSize="23sp"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>

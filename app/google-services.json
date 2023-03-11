@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118525565361",
+    "project_id": "blog-application-d5925",
+    "storage_bucket": "blog-application-d5925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118525565361:android:2c4c3ca1a3561c23360590",
+        "android_client_info": {
+          "package_name": "com.seeksolution.projectdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118525565361-e6ndgepe1njr8j2dt6pc02bie4utu49o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsiRNHvXtJYoWrcy5mFvKHaQgsa3ztwQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118525565361-e6ndgepe1njr8j2dt6pc02bie4utu49o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

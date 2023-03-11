@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginwithMobile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Mobile"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
+        android:hint="Enter Your Mobile Number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:startIconDrawable="@drawable/icon_phone"
+        app:startIconTint="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        android:layout_marginHorizontal="40dp"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:id="@+id/otp_et_mobile"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Send OTP"
+        android:textAllCaps="false"
+        android:background="@drawable/mycircleborder"
+        android:textSize="23sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/otp_btn_send"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
+        android:hint="Enter OTP"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:startIconDrawable="@drawable/verify_icon"
+        app:startIconTint="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        android:layout_marginHorizontal="40dp"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:id="@+id/otp_et_otp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginHorizontal="42dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="Resend OTP"
+            android:textAllCaps="false"
+            android:background="@drawable/mycircleborder"
+            android:textSize="23sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/otp_btn_resend"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Verify OTP"
+            android:textAllCaps="false"
+            android:background="@drawable/mycircleborder"
+            android:textSize="23sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/otp_btn_verify"/>
+
+    </LinearLayout>
+
+</LinearLayout>
